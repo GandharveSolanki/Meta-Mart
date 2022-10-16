@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Container class -->
+    <div class="container">
+
+        <!-- Form element -->
+        <form action="">
+            <div class="row">
+
+                <div class="col">
+    
+                    <h3 class="title">billing address</h3>
+
+                    <!-- Name Div -->
+                    <div class="inputBox">
+                        <span>Full Name: </span>
+                        <input type="text" placeholder="John Tucker">
+                    </div>
+
+                    <!-- Email Div -->
+                    <div class="inputBox">
+                        <span>Email: </span>
+                        <input type="email" placeholder="xyz@example.com">
+                    </div>
+
+                    <!-- Address Box -->
+                    <div class="inputBox">
+                        <span>Address: </span>
+                        <input type="text" placeholder="House-street-locality">
+                    </div>
+
+                    <!-- City -->
+                    <div class="inputBox">
+                        <span>City: </span>
+                        <input type="text" placeholder="Delhi">
+                    </div>
+
+                    <!-- State using FlexBox -->
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>State: </span>
+                            <input type="text" placeholder="Bihar">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>PinCode: </span>
+                            <input type="text" placeholder="123456">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+    
+                    <h3 class="title">Payment</h3>
+
+                    <!-- Accepted Cards Div -->
+                    <div class="inputBox">
+                        <span>Cards Accepted: </span>
+                        <img src="card_img.png" alt="">
+                    </div>
+
+                    <!--Card Name Div -->
+                    <div class="inputBox">
+                        <span>Cardholder Name: </span>
+                        <input type="text" placeholder="Mr. John Tucker">
+                    </div>
+
+                    <!-- Card Info Box -->
+                    <div class="inputBox">
+                        <span>Credit Card Number: </span>
+                        <input type="text" placeholder="1111-1111-1111-1111">
+                    </div>
+
+                    <!-- Expiry Date -->
+                    <div class="inputBox">
+                        <span>Expiration Month: </span>
+                        <input type="text" placeholder="January">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Expiration year: </span>
+                            <input type="text" placeholder="2022">
+                        </div>
+    
+                        <div class="inputBox">
+                            <span>CVV: </span>
+                            <input type="text" placeholder="000">
+                        </div>
+                    </div>                    
+
+                </div>
+
+                <input type="submit" value = "Proceed to CheckOut" class = "submit-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
