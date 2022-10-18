@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="../Styles/sign-in.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+
+<body>
+
+  <!--header-->
+  <header class="header_panel">
+    <!--left for logo-->
+    <div class="top_image">
+      <a href="#" class="logo_link"><img class="navbar_header_image" src="../Assets/images/meta-mart-new-logo-background-1.png"
+          alt=""></a>
+    </div>
+
+    <div class="right" id="topbar">
+      <a href="#">🏠 Home</a>
+      <a href="#">👤 Account info</a>
+      <a href="#">✨ Categories</a>
+      <a href="#">📦 Orders</a>
+      <a href="#">🛒 Cart</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+  </header>
+
+  <div class="content">
+    <div class="forms">
+      <div class="form-login">
+        <h1>Welcome Back, Please Login</h1>
+        <h1>To Your Account</h1>
+        <form action="#">
+          <div class="input-field">
+            <box-icon name='envelope' color="voilet" size="30px" id="env"></box-icon>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-field">
+            <box-icon name='lock-alt' color="voilet" size="30px" id="env"></box-icon>
+            <input type="password" placeholder="Enter your password" required>
+          </div>
+          <div class="label">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1" class="for-label"> Remember Me</label>
+          </div>
+          <div class="btn">
+            <button type="button" class="btn-in">Login</button>
+          </div>
+          <div class="other">
+            <p class="other-p">Or sign in using</p>
+            <box-icon name='facebook-circle' type='logo' size="45px" id="ufc"></box-icon>
+            <box-icon type='logo' name='instagram' size="45px"></box-icon>
+            <box-icon name='google' type='logo' size="45px"></box-icon>
+          </div>
+        </form>
+      </div>
+
+      <div class="last">
+
+        <a href="#" class="link">Forgot password?</a><a href="#">Register Now</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("topbar");
+      if (x.className === "right") {
+        x.className += " responsive";
+      } else {
+        x.className = "right";
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
