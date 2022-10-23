@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const mongoose = require ('mongoose');
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
+const ejs = require("ejs");
+app.set('view engine', 'ejs')
 
 const uri = "mongodb+srv://deep:test1234@clustername.mongodb.net/ecom-register-DB?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true";
 const url = "mongodb+srv://deep:test1234@testcluster.dqxwptd.mongodb.net/ecomDb?retryWrites=true&w=majority";
@@ -13,7 +15,7 @@ mongoose.connect("mongodb+srv://deep:test1234@testcluster.dqxwptd.mongodb.net/ec
         console.log(err);
         mongoose.disconnect();
     }else{
-        console.log("successfully connected");
+        console.log("successfully connected to your MongoDB database.");
     }
 });
 
@@ -92,18 +94,49 @@ app.post("/login", async function(req,res){
         const email = req.body.email;
         const password = req.body.cust_password;
         const usermail = await forminputs.findOne({Email: email});
-        
+        var id = usermail._id.toString().replace(/ObjectId\("(.*)"\)/, "$1");
         if(usermail.password === password){
-            res.send("you are signed in");
+            res.render("signin_success", {userid:id})
+            /*res.send("<h2>you are signed in, your unique user ID is : " + id+"</h2>");*/
         }else{
-            res.send("Oops! invalid credentials,go back and try again");
+            res.render("signin_failed")
+            /*res.send("Oops! invalid credentials,go back and try again");*/
         }
         
     } catch (error) {
         console.log(error);
-        res.send("this email is not registered yet go back and register please");
+        res.send("looks like you are not registered yet");
     }
-})
+});
+
+/*data fetching system*/
+
+const userschema = {
+    Fname: String,
+    Lname: String,
+    dateofBirth: Date,
+    Phone: Number,
+    Email: String, 
+    Address: String,
+    password: String, 
+    cnfpassword: String
+}
+
+const receiver = mongoose.model("Datainputs", userschema);
+
+app.get("/userdata/:id", function(req,res){
+    console.log(req.params.id)
+    receiver.findById(req.params.id, function (err, user) { 
+        if(err){
+            res.render("signin_failed");
+            /*console.log(err);*/
+        }else{
+            /*console.log(user);*/
+            res.render("user-data", {users:user});
+        }
+    }); 
+});
+
 
 let port = process.env.PORT;
 if(port == null || port == ""){
