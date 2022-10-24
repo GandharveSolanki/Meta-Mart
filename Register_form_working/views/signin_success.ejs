@@ -99,10 +99,12 @@
 
     /*second*/
     .secondbox{
-        background-color: rgb(46, 138, 0);
+        background: url("https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg?raw=true");
+        background-repeat: no-repeat;
+        background-size: cover;
         margin: 0;
-        height: 80vh;
-        color: white;
+        height: 100%;
+        color: rgb(0, 33, 141);
         display: flex;
         flex-direction: column;
         padding: 5%;
@@ -112,16 +114,20 @@
     }
     .uid_data{
         padding: 10px;
-        border-radius: 50px;
+        border-radius: 10px;
+        border: 0.5px solid grey;
+        text-align: center;
     }
     .see_btn{
         padding: 10px;
-        border-radius: 50px;
-        background-color: yellow;
+        border-radius: 10px;
+        border: 0.5px solid grey;
+        background-color: rgb(26, 26, 26);
+        color: white;
         margin-top: 20px;
     }
     .see_btn:hover{
-        background-color: rgb(194, 194, 1);
+        background-color: rgb(75, 75, 75);
         transition: 0.5s;
     }
     .goahead{
@@ -129,6 +135,16 @@
         flex-direction: column;
         text-align: center;
         width: 50%;
+    }
+    @media screen and (max-width: 1276px){
+        .secondbox{
+            background: rgb(153, 99, 241);
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .goahead{
+            width: 100%;
+        }
     }
 </style>
 <body>
@@ -154,6 +170,7 @@
 
     <div class="secondbox">
         <h1>Sign-in successful.</h1>
+        <p>Want to see your data?</p>
         <p>your unique user id is : <%=userid%></p>
         <form action="" method="get" id="redirect-form" class="goahead" onsubmit="redirect(); return false">
             <input type="text" name="uid" id="myuid" placeholder="Enter the unique user id" class="uid_data" required>

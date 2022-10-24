@@ -9,6 +9,7 @@
     <link rel="shortcut icon"
         href="https://raw.githubusercontent.com/Soumyadeep-Sinha/Project_image_samples/main/favicon.ico"
         type="image/x-icon">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>    
 </head>
 
 <style>
@@ -104,7 +105,7 @@
     .account_data {
         display: flex;
         flex-direction: column;
-        padding: 2%;
+        padding: 20px;
         font-size: 24px;
         color: azure;
     }
@@ -117,17 +118,25 @@
         font-size: 24px;
     }
 
-    .avatar img {
-        height: 200px;
-        padding: 2%;
-    }
-
     .section {
         background: url("https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/gradienta-OzfD79w8ptA-unsplash.jpg?raw=true");
         height: 100%;
     }
-    .account_data{
-        display: flex;
+    td{
+        text-align: left;
+        color: aqua;
+    }
+    .avatar img {
+        height: 200px;
+        padding: 20px;
+    }
+    @media screen and (max-width: 1276px){
+        td{
+            font-size: 18px;
+        }
+        .avatar img{
+            height: 100px;
+        }
     }
 </style>
 
@@ -156,33 +165,8 @@
         <div class="avatar">
             <img src="https://raw.githubusercontent.com/Soumyadeep-Sinha/Project_image_samples/main/avatar.png" alt="">
         </div>
-
         <div class="account_data">
-            <!--<% if(users.length>0) { %>
-                <table border='1'>
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Email-id</th>
-                        <th>Contact No</th>
-                        <th>Address</th>
-                        <th>U-id</th>
-                    </tr>
-                    <% for(var i=0; i<users.length;i++) { %>
-                    <tr>
-                        <td><%= users[i].Fname %></td>
-                        <td><%= users[i].Lname %></td>
-                        <td><%= users[i].Email %></td>
-                        <td><%= users[i].Phone %></td>
-                        <td><%= users[i].Address %></td>
-                        <td><%= users[i]._id %></td>
-                    </tr>
-                    <% } %>
-                </table>
-                <% } else { %>
-                    No Record Found
-                <% } %>-->
-
+            <h2>Here is your data.</h2>
             <table>
                 <tbody>
                     <tr>
@@ -236,9 +220,23 @@
             </table>
         </div>
 
-        <div class="infomessage">If you find any error in your data, please send your query with your unique user id to
-            contact@metaconnect.com</div>
+        <div class="infomessage">
+            <marquee behavior="" direction="">
+                If you find any error in your data, please send your query with your unique user id to
+                contact@metaconnect.com
+            </marquee>
+        </div>
     </div>
 </body>
-
+<!--responsive navbar-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("topbar");
+        if (x.className === "right") {
+            x.className += " responsive";
+        } else {
+            x.className = "right";
+        }
+    }
+</script>
 </html>
