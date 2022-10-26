@@ -1,0 +1,14 @@
+:root{
+    --purple: #161853;
+    --dark-blue: #292C6D;
+    --pink: #EC255A;
+    --cream: #FAEDF0;
+    --white: #ffffff;
+    --black: #000;
+}
+
+:root{
+    --b-red: 2px solid red;
+    --b-blue: 2px solid blue;
+    --b-green: 2px solid darkgreen;
+}
