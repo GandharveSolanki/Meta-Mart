@@ -1,0 +1,285 @@
+@import url(./homePage_Utils.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* headline */
+.headline-inner{
+    /* border: var(--b-red); */
+    height: 40px;
+    background: rgb(41,44,109);
+    background: linear-gradient(90deg, rgba(41,44,109,1) 0%, rgba(236,37,90,1) 66%, rgba(250,237,240,1) 100%);
+    display: flex;
+    padding: 0px 150px;
+    justify-content: space-between;
+}
+
+.headline-left-msg{
+    /* border: var(--b-blue); */
+    color: var(--white);
+    width: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.headline-right-msg{
+    /* border: var(--b-green); */
+    width: 40rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.headline-right-msg li{
+    border-right: 2px solid white;
+    color: var(--white) !important;
+    margin-left: 10px;
+}
+
+.headline-right-msg ul{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.headline-right-msg a{
+    text-decoration: none;
+}
+
+.headline-right-msg a:hover{
+    color: var(--purple);
+}
+
+.te-text{
+    margin: 0 5px;
+}
+
+/* nav-bar */
+.nav-wrapper{
+    /* border: var(--b-red); */
+    background-color: var(--purple);
+}
+
+.nav-logo img{
+    width: 250px;
+}
+
+/* nav search input*/
+.nav-search{
+    background-color: var(--cream);
+    border-radius: 10px;
+}
+
+.nav-search input:focus{
+    border: 2px solid var(--pink);
+}
+
+/* search btn */
+.nav-search button{
+    width: 40px;
+    height: 42px;
+    background-color: var(--pink);
+    border-radius: 0 10px 10px 0;
+}
+
+.nav-search button:hover{
+    opacity: 90%;
+}
+
+.search-btn i{
+    color: var(--white);
+}
+
+/* nav-left */
+.nav-list li{
+    color: var(--cream);
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.nav-list li:hover{
+    color: var(--pink);
+}
+
+.nav-list li i{
+    padding: 0 0.5rem;
+}
+
+/* sec-01 */
+/* banner */
+.sec-01-inner img{
+    object-fit: cover;
+    height: 24rem;
+}
+
+/* sec-02 */
+/* start head */
+.sec-02-card{
+    background-image: url(../Assets/bg-card.png);
+    background-size: cover;
+    z-index: 150;
+}
+
+/* heading */
+.sec-02-card h1{
+    font-size: xx-large;
+    font-weight: 400;
+    color: var(--purple);
+}
+
+/* view btn */
+.category-view a{
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.category-view a:hover{
+    background-color: var(--dark-blue);
+}
+
+/* categories product */
+.category-product img:hover{
+    transition: .8s;
+    transform: scale(1.1);
+}
+
+/* scroll behaviour of the product */
+.sec-02-inner{
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 90%;
+    scroll-behavior: smooth;
+}
+
+/* disables the scroll view line at the bottom */
+.sec-02-inner::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+.category-product {
+    margin: 0 5px;
+}
+
+.sec-02-outer{
+    background-color: var(--cream);
+}
+
+/* left arrow btn */
+.fa-chevron-left, .fa-chevron-right{
+    font-size: xx-large;
+    color: var(--cream);
+    padding: 5px;
+}
+
+.arrow-icon-l{
+    background-color: var(--pink);
+    border-radius: 0 10px 10px 0;
+    transform: translate(0 50%);
+    box-shadow:0 0 30px var(--cream);
+    z-index: 100;
+}
+.arrow-icon-l:hover{
+    opacity: 90%;
+}
+
+.arrow-icon-r{
+    background-color: var(--pink);
+    border-radius: 10px 0 0 10px;
+    box-shadow:0 0 30px var(--cream);
+    z-index: 100;
+    transform: translate(0 50%);
+}
+.arrow-icon-r:hover{
+    opacity: 90%;
+}
+
+/* footer */
+.foot-m{
+    background-color: var(--purple);
+}
+
+.foot-m li{
+    color: var(--cream);
+}
+.foot-m h2{
+    font-size: large;
+    color: var(--cream);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media Queries */
+
+/* MOBILE- 425px */
+@media only screen and (max-width: 425px) {
+    /* headline */
+    .headline-outer{
+        display: none;
+    }
+
+    /* nav bar */
+    .nav-wrapper.flex{
+        display: block;
+    }
+
+    .nav-right, .nav-left{
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-right img{
+        width: 150px;
+    }
+
+    .nav-left{
+        padding: 1rem 0;
+    }
+}
+
+
+
+/* TAB- 1024px */
+@media only screen and (max-width: 1024px) {
+    /* headline */
+    .headline-right-msg{
+        display: none;
+    }
+
+    .headline-left-msg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
