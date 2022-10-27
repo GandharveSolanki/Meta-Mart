@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://raw.githubusercontent.com/Soumyadeep-Sinha/Project_image_samples/main/favicon.ico">
+    
+    <link rel="stylesheet" href="css/product_page.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--optional marquee-->
+    <!--<div class="marquee_section" id="marquee_1">
+        <marquee> ⭐⭐⭐ Get upto 50%* off on all adidas purchases. Use code META50. ⭐⭐⭐ </marquee>
+    </div>-->
+
+    <!--header-->
+    <header class="header_panel">
+        <!--left for logo-->
+        <div class="top_image">
+            <a href="#" class="logo_link"><img class="navbar_header_image"
+                    src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/meta-mart-new-logo-background-1.png?raw=true" alt=""></a>
+        </div>
+
+        <div class="right" id="topbar">
+            <a href="#">🏠 Home</a>
+            <a href="#">👤 Account info</a>
+            <a href="#">✨ Categories</a>
+            <a href="#">📦 Orders</a>
+            <a href="#">🛒 Cart</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+    </header>
+
+    <!--search bar -->
+    <div class="search_form">
+        <form action="" class="myform">
+            <input type="text" name="filter" id="searchName" placeholder="search a product">
+            <button type="submit" class="searchbar_button">🔍</button>
+        </form>
+    </div>
+
+    <!--second section-->
+    <div class="product_info_panel">
+        <div class="image_carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000"
+                data-pause="hover">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 my_carousel_class_image"
+                            src="https://rukminim1.flixcart.com/image/832/832/kvba7bk0/shoe/e/x/a/-original-imag88gaz8usp3nk.jpeg?q=70"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 my_carousel_class_image"
+                            src="https://rukminim1.flixcart.com/image/832/832/kuyf8nk0/shoe/n/z/v/7-hmi64-7-adidas-mysblu-creblu-actgol-original-imag7yz7vjyjpfwk.jpeg?q=70"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 my_carousel_class_image"
+                            src="https://rukminim1.flixcart.com/image/832/832/kuyf8nk0/shoe/o/v/d/7-hmi64-7-adidas-mysblu-creblu-actgol-original-imag7yz7hahmha9d.jpeg?q=70"
+                            alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 my_carousel_class_image"
+                            src="https://rukminim1.flixcart.com/image/832/832/kuyf8nk0/shoe/o/2/r/7-hmi64-7-adidas-mysblu-creblu-actgol-original-imag7yz7dgssfvhq.jpeg?q=70"
+                            alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 my_carousel_class_image"
+                            src="https://rukminim1.flixcart.com/image/832/832/kuyf8nk0/shoe/h/q/j/7-hmi64-7-adidas-mysblu-creblu-actgol-original-imag7yz75frgpzjc.jpeg?q=70"
+                            alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 my_carousel_class_image"
+                            src="https://rukminim1.flixcart.com/image/832/832/kuyf8nk0/shoe/n/n/d/7-hmi64-7-adidas-mysblu-creblu-actgol-original-imag7yz7vmba9hw8.jpeg?q=70"
+                            alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="basic_info">
+            <div class="Product_name">
+                <p id="product_title_text">Adidas Mens Glowrun Reflective M Running Shoes.</p>
+            </div>
+
+            <div class="pricing_detail_and_rating">
+                <div class="prices">
+                    <p class="final_price">Price Rs 1799</p>
+                    <p class="delivery_charges">Delevery : <strong>free</strong></p>
+                    <p class="initial_price"><s>Rs 4599</s></p>
+                </div>
+
+                <div class="basic_rating">
+                    <p>4.1/5 ⭐</p>
+                    <p class="" style="font-size: 15px; margin: 5px">254 ratings</p>
+                </div>
+            </div>
+
+            <div class="basic_info">
+                <p class="primary_info_title"><strong>Product Details.</strong></p>
+                <div class="primary_details_of_product">
+                    <p class="detail_list_basic">Material Type - Rubber, Closure Type - Pull On, Water Resistance Level - Not Water Resistant</p>
+                </div>
+            </div>
+
+            <div class="buy_buttons">
+                <form action="" method="post">
+
+                    <div class="selectors">
+                        <label class="total_quantity" for="quantity">Quantity</label>
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+
+                        <label class="product_size" for="size">Size</label>
+                        <select name="size" id="shoe_size">
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="buy_now_button" type="submit"><i class="fas fa-shopping-bag"></i>&nbsp; BUY
+                            NOW</button>
+                        <button class="cart_now_button" type="submit"><i class="fas fa-shopping-cart"></i>&nbsp; ADD TO
+                            CART</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--third panel-->
+
+    <div class="detailed_info">
+        <div class="brand_and_seller_and_product">
+            <div class="brand_info">
+                <img src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/Adidas-Liverpool-ONE.jpg?raw=true" alt="brand logo" class="brandlogo">
+                <p class="brand_details">Adidas sells a range of clothing items, varying from men's and women's
+                    t-shirts, jackets, hoodies, pants and leggings. The adidas brand offers apparel for every sport,
+                    every fashion, every style, whether you are an athlete or fashionista.</p>
+            </div>
+
+            <div class="product_detailed_info">
+                <p class="basic_info_title" id="info_title"><strong>Product description :</strong></p>
+                <div class="detailed_info">
+                    <p class="detail_list_adv">Material - Synthetics, Textile, Rubber, Color - Blue Night Aa33 / Stone 459a / Semi Impact Orange Aelf,Package Contents - Pair of Mens Running Shoes.</p>
+                </div>
+            </div>
+
+            <div class="seller_info">
+                <p class="basic_info_title" id="seller_title"><strong>Seller Information :</strong></p>
+                <p class="seller_description">ADIDAS INDIA MARKETING PRIVATE LIMITED, Adidas India Marketing Private
+                    Ltd. Office no.6, 2nd Floor, Sector-B, Pocket-7, Plot no-11, Vasant Kunj, New Delhi-110070.</p>
+
+            </div>
+        </div>
+        <!--Delivery data-->
+        <div class="delivery_data_panel">
+            <div class="delivery_date_and_charges">
+                <p class="expected_text">Expected delivery by :</p>
+                <p class="delivery_date" id="del_date"></p>
+                <p class="delivery_mode">Delivery mode : Standard</p>
+            </div>
+            <div class="delivery_address">
+                <p class="user_address"> Deliver to : Lawrence Moreno,935-9940 Tortor. Street,Santa Rosa MN 98804,(684)
+                    579-1879</p>
+                <p>Payment mode : Cash on delivery.(only)</p>
+            </div>
+        </div>
+        <div class="marquee_section">
+            <marquee style="padding: 5px;" scrollamount="15">
+                <img src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/meta-mart-3.png?raw=true"
+                    alt="" srcset="" style="width: 400px; height: 150px; margin: 20px">
+                <img src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/meta-mart-4.png?raw=true"
+                    alt="" srcset="" style="width: 400px; height: 150px; margin: 20px">
+                <img src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/meta-mart-5.png?raw=true"
+                    alt="" srcset="" style="width: 400px; height: 150px; margin: 20px">
+                <img src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/meta-mart-6.png?raw=true"
+                    alt="" srcset="" style="width: 400px; height: 150px; margin: 20px">
+                <img src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/meta-mart-7.png?raw=true"
+                    alt="" srcset="" style="width: 400px; height: 150px; margin: 20px">
+            </marquee>
+        </div>
+        <!--ratings panel-->
+
+        <div class="ratings_panel">
+            <div class="rating_texts">
+                <span class="heading_rating_section">User Rating</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p class="rating_data">4.1 average based on 254 ratings.</p>
+            </div>
+
+            <div class="bars">
+                <div class="mid">
+                    <div class="full_bar">
+                        <p>5⭐</p>
+                        <div class="bar_5_star bar_property"></div>
+                        <p>2590</p>
+                    </div>
+                </div>
+
+                <div class="mid">
+                    <div class="full_bar">
+                        <p>4⭐</p>
+                        <div class="bar_4_star bar_property"></div>
+                        <p>5089</p>
+                    </div>
+                </div>
+
+                <div class="mid">
+                    <div class="full_bar">
+                        <p>3⭐</p>
+                        <div class="bar_3_star bar_property"></div>
+                        <p>1239</p>
+                    </div>
+                </div>
+
+                <div class="mid">
+                    <div class="full_bar">
+                        <p>2⭐</p>
+                        <div class="bar_2_star bar_property"></div>
+                        <p>123</p>
+                    </div>
+                </div>
+
+                <div class="mid">
+                    <div class="full_bar">
+                        <p>1⭐</p>
+                        <div class="bar_1_star bar_property"></div>
+                        <p>280</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--third marquee-->
+    <div class="marquee_section" id="marquee_1">
+        <marquee> Free delivery on all purchases. Hurry! limited time offer. </marquee>
+    </div>
+    <!--Suggestions-->
+    <div class="suggestion_text">
+        <p>Customers also viewed</p>
+    </div>
+    <div class="row center" id="suggestion_box">
+        <div class="card">
+            <a href=""><img class="suggestion_image"
+                    src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/adidas-2.jpg?raw=true"
+                    alt="shoe image"></a>
+            <div class="card-body">
+                <a href="">
+                    <h4>Fluo M Running Shoes</h4>
+                </a>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span> 42 reviews</span>
+                </div>
+                <div class="row">
+                    <div class="price">Rs 1299</div>
+                    <div><a href="" class="brand_name">ADIDAS</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href=""><img class="suggestion_image"
+                    src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/adidas-3.jpg?raw=true"
+                    alt="shoe image"></a>
+            <div class="card-body">
+                <a href="">
+                    <h4>Stunicon Running Shoes</h4>
+                </a>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span> 25 reviews</span>
+                </div>
+                <div class="row">
+                    <div class="price">Rs 2699</div>
+                    <div><a href="" class="brand_name">ADIDAS</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a href=""><img class="suggestion_image"
+                    src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/adidas-2.jpg?raw=true"
+                    alt="shoe image"></a>
+            <div class="card-body">
+                <a href="">
+                    <h4>Fluo M Running Shoes</h4>
+                </a>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span> 42 reviews</span>
+                </div>
+                <div class="row">
+                    <div class="price">Rs 1299</div>
+                    <div><a href="" class="brand_name">ADIDAS</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href=""><img class="suggestion_image"
+                    src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/adidas-5.jpg?raw=true"
+                    alt="shoe image"></a>
+            <div class="card-body">
+                <a href="">
+                    <h4>Stunner Running Shoes</h4>
+                </a>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span> 15 reviews</span>
+                </div>
+                <div class="row">
+                    <div class="price">Rs 2899</div>
+                    <div><a href="" class="brand_name">ADIDAS</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href=""><img class="suggestion_image"
+                    src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/adidas-2.jpg?raw=true"
+                    alt="shoe image"></a>
+            <div class="card-body">
+                <a href="">
+                    <h4>Fluo M Running Shoes</h4>
+                </a>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span> 42 reviews</span>
+                </div>
+                <div class="row">
+                    <div class="price">Rs 1299</div>
+                    <div><a href="" class="brand_name">ADIDAS</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a href=""><img class="suggestion_image"
+                    src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/adidas-5.jpg?raw=true"
+                    alt="shoe image"></a>
+            <div class="card-body">
+                <a href="">
+                    <h4>Stunner Running Shoes</h4>
+                </a>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span> 15 reviews</span>
+                </div>
+                <div class="row">
+                    <div class="price">Rs 2899</div>
+                    <div><a href="" class="brand_name">ADIDAS</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href=""><img class="suggestion_image"
+                    src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/adidas-2.jpg?raw=true"
+                    alt="shoe image"></a>
+            <div class="card-body">
+                <a href="">
+                    <h4>Fluo M Running Shoes</h4>
+                </a>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span> 42 reviews</span>
+                </div>
+                <div class="row">
+                    <div class="price">Rs 1299</div>
+                    <div><a href="" class="brand_name">ADIDAS</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a href=""><img class="suggestion_image"
+                    src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/adidas-5.jpg?raw=true"
+                    alt="shoe image"></a>
+            <div class="card-body">
+                <a href="">
+                    <h4>Stunner Running Shoes</h4>
+                </a>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span> 15 reviews</span>
+                </div>
+                <div class="row">
+                    <div class="price">Rs 2899</div>
+                    <div><a href="" class="brand_name">ADIDAS</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--service image-->
+    <div class="service_image">
+        <img src="https://github.com/Soumyadeep-Sinha/Project_image_samples/blob/main/service_image.png?raw=true" alt="" srcset="" class="assurance_image">
+    </div>
+
+    <!--footer-->
+    <div class="footer_panel">
+        <footer id="footer">
+            <div class="follow-icons">
+                <i class="fab fa-instagram fa-2x" style="color: rgb(194, 91, 228)"></i>
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-twitter fa-2x" style="color: skyblue"></i>
+            </div>
+
+            <p class="copyright-text">©2022 Metamart.LLC . All Rights Reserved.</p>
+            <a class="terms_and_conditions" href="https://Terms-and-conditions.soumyadeep0842.repl.co"
+                target="_blank">Terms and Conditions</a>
+            <div id="google_translate_element">Translate this page</div>
+            <p class="bottom text"> proudly, Made in India ❤️</p>
+
+        </footer>
+    </div>
+
+    <!--overlay
+    <div id="overlay" onclick="off()">
+        <div id="advertisement"><img src="images/overlay_image.gif" alt="" srcset=""></div>
+    </div>-->
+    <!--searchbar scripts-->
+<script>
+    $(function () {
+        $('#searchName').autocomplete({
+            source: function (req, res) {
+                $.ajax({
+                    url: "autocomplete/",
+                    dataType: "jsonp",
+                    type: "GET",
+                    data: req,
+                    success: function (data) {
+                        res(data)
+                    },
+                    error: function (err) {
+                        console.log(err.status);
+                    }
+                });
+            },
+        });
+    });
+</script>
+</body>
+
+<!--date script-->
+<script>
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var today = new Date();
+    var expectedDate = new Date(new Date().setDate(today.getDate() + 7));
+    document.getElementById("del_date").innerHTML += weekday[expectedDate.getDay()] + ", " + expectedDate.getDate() + " - " + expectedDate.getMonth() + " - " + expectedDate.getFullYear();
+</script>
+<!--responsive navbar-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("topbar");
+        if (x.className === "right") {
+            x.className += " responsive";
+        } else {
+            x.className = "right";
+        }
+    }
+</script>
+
+<!--overlay script-->
+<script>
+    function off() {
+        document.getElementById("overlay").style.display = "none";
+    }
+</script>
+
+<!--google translate API-->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            { pageLanguage: 'en' },
+            'google_translate_element'
+        );
+    } 
+</script>
+
+<script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!--bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+</html>
