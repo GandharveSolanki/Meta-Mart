@@ -1,7 +1,7 @@
 {
   "name": "product_page",
   "version": "1.0.0",
-  "description": "",
+  "description": "Warning: messing with the jquery CDN might lead to complete failure of bootstrap.\r or it may make the search bar unresponsive.",
   "main": "search_script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
