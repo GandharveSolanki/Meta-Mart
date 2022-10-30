@@ -53,6 +53,26 @@ app.get('/post/:anything', (req, res) => {
     });
 });
 
+// seller page data
+app.get('/seller', (req, res) => {
+    const reqTitle= req.params.anything;
+   productinputs.find({ _id:reqTitle}, function (err, docs) {
+        if (err){
+            console.log(err);
+        }
+        else{
+            console.log("First function call : ", docs);
+        }
+      
+        res.render("product",{Title:docs});
+    });
+});
+
+
+app.post("/",function(req,res){
+    
+})
+
 app.get("/",function(req,res){
    res.sendFile(path.join(__dirname+"/Pages/homePage.html"));
 });
@@ -61,6 +81,10 @@ app.get("/category",function(req,res){
     res.sendFile(path.join(__dirname+"/Pages/category.html"));
  });
  
+
+
+
+// server port
 app.listen(3000, function () {
     console.log("server started on the port 3000");
   });
