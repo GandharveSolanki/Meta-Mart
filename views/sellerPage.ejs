@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Mart</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Soumyadeep-Sinha/Project_image_samples/main/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <style>
+        .profile-img img{
+            height: 10rem;
+        }
+
+        .seller-inner{
+            display: flex;
+            align-items: center;
+            background-color: #161853;
+            color: white;
+        }
+        
+        .seller-inner div{
+            padding: 0px 20px;
+        }
+
+        .seller-detail{
+            font-size: x-large;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="seller-main">
+        <div class="seller-outer">
+            <div class="seller-inner py-4">
+              <div class="profile-img">
+                <img src="https://raw.githubusercontent.com/Soumyadeep-Sinha/Project_image_samples/main/avatar.png" alt="">
+              </div>
+              <div class="seller-detail">
+                <p>SELLER NAME</p>
+                <p>Email-Id</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- table -->
+    <div class="overflow-x-auto relative p-6">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="py-3 px-6 rounded-l-lg">
+                        Product name
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Qty
+                    </th>
+                    <th scope="col" class="py-3 px-6 rounded-r-lg">
+                        Price
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Apple MacBook Pro 17"
+                    </th>
+                    <td class="py-4 px-6">
+                        1
+                    </td>
+                    <td class="py-4 px-6">
+                        $2999
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Microsoft Surface Pro
+                    </th>
+                    <td class="py-4 px-6">
+                        1
+                    </td>
+                    <td class="py-4 px-6">
+                        $1999
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Magic Mouse 2
+                    </th>
+                    <td class="py-4 px-6">
+                    1
+                    </td>
+                    <td class="py-4 px-6">
+                        $99
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="font-semibold text-gray-900 dark:text-white">
+                    <th scope="row" class="py-3 px-6 text-base">Total</th>
+                    <td class="py-3 px-6">3</td>
+                    <td class="py-3 px-6">21,000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>
