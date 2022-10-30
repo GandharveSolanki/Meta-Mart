@@ -172,15 +172,15 @@
         <h1>Sign-in successful.</h1>
         <p>Want to see your data?</p>
         <p>your unique user id is : <%=userid%></p>
-        <form action="" method="get" id="redirect-form" class="goahead" onsubmit="redirect(); return false">
+        <form action="/signthis" method="post" class="goahead">
             <input type="text" name="uid" id="myuid" placeholder="Enter the unique user id" class="uid_data" required>
             <button class="see_btn"> See your data</button>
         </form>
-        <script>
+        <!-- <script>
             function redirect(){       
-                window.location.href="https://immense-waters-20477.herokuapp.com/userdata/" + document.getElementById("myuid").value;              
+                window.location.href="localhost:3000/userdata/" + document.getElementById("myuid").value;              
             }
-        </script>
+        </script> -->
     </div>
     
 </body>

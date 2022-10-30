@@ -38,18 +38,8 @@
                 <img src="https://raw.githubusercontent.com/Soumyadeep-Sinha/Project_image_samples/main/avatar.png" alt="">
               </div>
               <div class="seller-detail">
-               
-               <%var count=0;%>
-                <% for(var i=0;i<sellerarray.length;i++){%>
-                    <%var user=sellerarray[i];%>
-                 <%if(count==0)%>
-                 <%{%>
-                    <p><%=user.Seller_Name%>  </p>
-                    <p><%=user.Email%></p>
-                    <%}%>
-                    <%break%>;
-                <%}%>
-                
+                <p>SELLER NAME</p>
+                <p>Email-Id</p>
               </div>
             </div>
         </div>
@@ -60,7 +50,7 @@
             <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
                     <th scope="col" class="py-3 px-6 rounded-l-lg">
-                        Product Name
+                        Product name
                     </th>
                     <th scope="col" class="py-3 px-6">
                         Qty
@@ -71,22 +61,47 @@
                 </tr>
             </thead>
             <tbody>
-                <%sellerarray.forEach(function(user){%>
                 <tr class="bg-white dark:bg-gray-800">
                     <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        <%=user.Product_Name%>
-                       
+                        Apple MacBook Pro 17"
                     </th>
                     <td class="py-4 px-6">
-                        <%=user.Product_quantity%>
+                        1
                     </td>
                     <td class="py-4 px-6">
-                        <%=user.Selling_price%>
+                        $2999
                     </td>
                 </tr>
-                <%});%>
-                
+                <tr class="bg-white dark:bg-gray-800">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Microsoft Surface Pro
+                    </th>
+                    <td class="py-4 px-6">
+                        1
+                    </td>
+                    <td class="py-4 px-6">
+                        $1999
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Magic Mouse 2
+                    </th>
+                    <td class="py-4 px-6">
+                    1
+                    </td>
+                    <td class="py-4 px-6">
+                        $99
+                    </td>
+                </tr>
             </tbody>
+            <tfoot>
+                <tr class="font-semibold text-gray-900 dark:text-white">
+                    <th scope="row" class="py-3 px-6 text-base">Total</th>
+                    <td class="py-3 px-6">3</td>
+                    <td class="py-3 px-6">21,000</td>
+                </tr>
+            </tfoot>
         </table>
     </div>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
